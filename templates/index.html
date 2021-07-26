@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Welcome</title>
+</head>
+<body>
+    <div id="title">
+        Sensor Dashboard Backend
+        <div id="info">
+            <p>Endpoints</p>
+            <ul>
+                <li><a href="/get-data">/get-data</a></li>
+                <li><a href="/set-max-storage/1000">/set-max-storage/1000</a></li>
+                <li><a href="/hottest-day">/hottest-day</a></li>
+                <li><a href="/coldest-day">/coldest-day</a></li>
+                <li><a href="/all-data">/all-data</a></li>
+                <li><a href="#">/sort_data/[category]/[kind]/[reverse]</a></li>
+                <ul>
+                    <li>category: temperature, humidity, or heat_index</li>
+                    <li>kind: max, min, or avg</li>
+                    <li>reverse: 0 or 1</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
