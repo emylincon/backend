@@ -5,9 +5,9 @@ from calendar import monthrange
 
 class Pod:
     def __init__(self):
-        self.max = {}
-        self.min = {}
-        self.avg = {}
+        self.max = dict()
+        self.min = dict()
+        self.avg = dict()
 
     @property
     def number_of_days_in_month(self):
