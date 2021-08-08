@@ -36,7 +36,6 @@ def set_max_store(store: int):
     :return:  json
     """
     DATA_OBJ.size_limit = store
-    print(f'size set {store}')
     return jsonify({'size limit store': store})
 
 
